@@ -1,6 +1,8 @@
 library(RColorBrewer)
 library(ggplot2)
 
+rm(list=ls())
+
 setwd("C:\\Users\\Bill\\Documents\\NCSU\\Course Work\\Fall\\Linear Algebra\\Homework")
 #setwd("C:\\Users\\Steven\\Documents\\MSA\\Analytics Foundations\\lab and hw\\Linear Algebra\\HW1 Repo")
 
