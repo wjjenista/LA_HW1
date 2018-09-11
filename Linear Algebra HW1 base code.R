@@ -3,11 +3,11 @@ library(ggplot2)
 
 rm(list=ls())
 
-#setwd("C:\\Users\\Bill\\Documents\\NCSU\\Course Work\\Fall\\Linear Algebra\\Homework")
-setwd("C:\\Users\\Steven\\Documents\\MSA\\Analytics Foundations\\lab and hw\\Linear Algebra\\HW1 Repo")
+setwd("C:\\Users\\Bill\\Documents\\NCSU\\Course Work\\Fall\\Linear Algebra\\Homework")
+#setwd("C:\\Users\\Steven\\Documents\\MSA\\Analytics Foundations\\lab and hw\\Linear Algebra\\HW1 Repo")
 
-#path = "C:\\Users\\Bill\\Documents\\NCSU\\Course Work\\Fall\\Linear Algebra\\Homework\\LeukError.RData"
-path = "C:\\Users\\Steven\\Documents\\MSA\\Analytics Foundations\\lab and hw\\Linear Algebra\\LeukError.RData"
+path = "C:\\Users\\Bill\\Documents\\NCSU\\Course Work\\Fall\\Linear Algebra\\Homework\\LeukError.RData"
+#path = "C:\\Users\\Steven\\Documents\\MSA\\Analytics Foundations\\lab and hw\\Linear Algebra\\LeukError.RData"
 
 load(path)
 
@@ -16,7 +16,7 @@ leuk.pca = prcomp(leuk[,1:5000], scale=FALSE)
 View(leuk[,1:50])
 
 ## Pick a color palette
-display.brewer.all()
+#display.brewer.all()
 palette(brewer.pal(n = 3, name = "Set1"))
 
 
