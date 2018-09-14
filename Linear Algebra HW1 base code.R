@@ -40,6 +40,8 @@ str(pca_df)
 pc_plot <- ggplot(pca_df, aes(x=PC1, y=PC2)) +
   geom_point(aes(color = leuk_class)) +
   coord_cartesian() +
+  xlab("Principal Component 1") +
+  ylab("Principal Component 2") +
   theme_bw()
 
 #plot with all labels
@@ -47,7 +49,7 @@ pc_plot +
   geom_text(aes(label=id), hjust=1, vjust=0)
 
 #plot with more selective labels
-labeled_pts <- c(2, 10, 19, 20, 23) #change this line to select which points to label
+labeled_pts <- c(2, 10, 19, 20, 23, 7, 35) #change this line to select which points to label
 pc_plot +
   geom_text(data=subset(pca_df, id %in% labeled_pts),
             aes(label=id, hjust=1, vjust=0))
